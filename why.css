@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: pink;
+  color: yellow;
+}
+.blink {
+animation: blink-animation 1s steps(5, start) infinite;
+-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+to {
+  visibility: hidden;
+}
+}
+@-webkit-keyframes blink-animation {
+to {
+  visibility: hidden;
+}
+}
+a {
+color: purple;
+text-decoration: underline;
+}
+a:hover {
+color: red;
+text-decoration: overline;
+}
